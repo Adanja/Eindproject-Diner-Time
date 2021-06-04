@@ -8,6 +8,7 @@
 
     <body>
         <nav>
+            <h4>Diner Time</h4>
             <ul>
                 <li>Home</li>
                 <li>Recepten</li>
@@ -15,6 +16,18 @@
                 <li>Sign up</li>
                 <li>Log in</li>
             </ul>
+            <div id="nav-bottom">
+                <div id="dark-mode">
+                    <p><img src="img/Icon feather-moon.svg" alt="dark-mode"> Dark mode </p>
+                </div>
+
+                <button id="btn-sign-up">
+                    Sign up
+                </button>
+                <button id="btn-log-in">
+                    Log in
+                </button>
+            </div>
         </nav>
         <div id="selection-menu">
             <label for="recepy-select-options">Selecteer op:</label>
@@ -27,7 +40,7 @@
             </select>
         </div>
         <div id="searchbar">
-            <input type="text" placeholder="Vul hier je zoekterm in..">
+            <input type="text" class="select-recepy " placeholder="Vul hier je zoekterm in..">
 
             <select name="recepy-courses" class="select-recepy">
                 <option value="option1">Gangoptie 1</option>
@@ -49,6 +62,31 @@
         <div class="highlighted_recepy">
             <h1>Coquelle</h1>
             <img class="highlighted_recepy_img" src="./img/voorgerecht-coquille.jpg" alt="coquelle">
+            <div class="social-media-handles">
+                <img src="./img/pinterest.svg" alt="pinterest">
+                <img src="./img/empty-heart.svg" alt="favourite">
+            </div>
+            <div class="recepy-rating">
+                <div id="rated_stars"> Aantal sterren:
+                    <img src="./img/Icon%20ionic-ios-star.svg" alt="rating">
+                    <img src="./img/Icon%20ionic-ios-star.svg" alt="rating">
+                    <img src="./img/Icon%20ionic-ios-star.svg" alt="rating">
+                    <img src="./img/Icon%20ionic-ios-star-half.svg" alt="rating">
+                    <img src="./img/Icon%20ionic-ios-star-outline.svg" alt="rating">
+                </div>
+            </div>
+            
+            <div class="recepy-tags">
+                <tag>Voorgerecht</tag>
+                <tag>Bladerdeeg</tag>
+                <tag>Makkelijk</tag>
+            </div>
+            <button class="btn_green">Recept maken</button>
+        </div>
+
+        <div class="highlighted_recepy2">
+            <h1>Warm rood fruit</h1>
+            <img class="highlighted_recepy_img" src="./img/ijs_nagerecht.jpg" alt="ijs_met_fruit">
             <div class="recepy-tags">
                 <tag>Voorgerecht</tag>
                 <tag>Bladerdeeg</tag>
@@ -59,19 +97,41 @@
 
         <div class="search_courses">
             <h1>Zoek op gangen</h1>
-            <button class="btn_white">Voorgerecht</button>
-            <button class="btn_white">Hoofdgerecht</button>
-            <button class="btn_white">Nagerecht</button>
-            <button class="btn_white">Desert</button>
+            <div class="search_courses">
+                <button class="btn_white">Voorgerecht</button>
+                <button class="btn_white">Hoofdgerecht</button>
+                <button class="btn_white">Nagerecht</button>
+                <button class="btn_white">Desert</button>
+            </div>
+
+            <div class="search_courses">
+                <button class="btn_white">Kip</button>
+                <button class="btn_white">Rund</button>
+                <button class="btn_white">Vis</button>
+                <button class="btn_white">Gevogelte</button>
+            </div>
+            <div class="search_courses">
+                <button class="btn_white">Vegetarisch</button>
+                <button class="btn_white">Vegan</button>
+                <button class="btn_white">Glutenvrij</button>
+                <button class="btn_white">Lactose-vrij</button>
+            </div>
         </div>
 
         <div id="highlighted_user">
-            <h3>Soepen maken vind ik het allerleukste om te doen</h3>
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto cum deserunt dolor eos explicabo itaque libero magni minus, modi necessitatibus officia porro, quas rem sed similique sit ut vero!</span><span>At earum explicabo facere incidunt porro. Accusantium adipisci animi eaque incidunt ipsa necessitatibus nulla obcaecati odit provident quae quam quod, quos sunt, voluptate voluptates. Itaque nulla praesentium quasi repellendus suscipit?</span></p>
-            <img src="/img/profile_avatar.svg">
-            <h5>Gebruikersnaam</h5>
+            <div id="hl-user-text">
+                <h3>Soepen maken vind ik het allerleukste om te doen</h3>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto cum deserunt dolor eos explicabo itaque libero magni minus, modi necessitatibus officia porro, quas rem sed similique sit ut vero!</span><span>At earum explicabo facere incidunt porro. Accusantium adipisci animi eaque incidunt ipsa necessitatibus nulla obcaecati odit provident quae quam quod, quos sunt, voluptate voluptates. Itaque nulla praesentium quasi repellendus suscipit?</span></p>
+            </div>
+
+            <div id="hl-user-profile">
+                <img src="./img/profile_avatar.svg">
+                <h5>Gebruikersnaam</h5>
+            </div>
+        <div id="hl-user-buttons">
             <button class="btn_green">Bekijk profiel</button>
             <button class="btn_white">Bekijk recept</button>
+        </div>
         </div>
         <footer>
             <p>Hallo ik ben de footer</p>

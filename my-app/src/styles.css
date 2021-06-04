@@ -48,7 +48,7 @@ nav {
     background-color: white;
 }
 
-#nav-bottom {
+.nav-bottom {
     position: absolute;
     bottom: 38%;
     left: 0;
@@ -84,7 +84,7 @@ nav li {
 }
 
 
-#btn-sign-up {
+.btn-sign-up {
     display: block;
     width: 150px;
     margin-left:auto;
@@ -100,7 +100,7 @@ nav li {
     text-transform: uppercase;
 }
 
-#btn-log-in {
+.btn-log-in {
     display: block;
     width: 150px;
     margin-left:auto;
@@ -122,7 +122,7 @@ input {
     border-radius: 14px;
 }
 
-#selection-menu {
+.selection-menu {
     margin-left: 20%;
     grid-area: sort;
     padding: 10px;
