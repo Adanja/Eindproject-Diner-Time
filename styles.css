@@ -122,16 +122,9 @@ input {
     border-radius: 14px;
 }
 
-#selection-menu {
-    margin-left: 20%;
-    grid-area: sort;
-    padding: 10px;
-    border-radius: 14px;
-    background-color: white;
+/*#selection-menu {*/
 
-    border-color: #9EA80D;
-    font-weight: bold;
-}
+/*}*/
 
 #recepy-select-options {
     border-radius: 14px;
@@ -151,7 +144,7 @@ input {
 }
 
 
-.highlighted_recepy{
+.highlighted-recepy{
     position:relative;
     grid-area: highlighted-recepy;
     text-align: center;

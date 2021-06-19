@@ -1,27 +1,33 @@
 import React from 'react';
+import {Link, NavLink} from 'react-router-dom';
+import darkMode from './img/Icon feather-moon.svg';
+import "./Nav.css";
 
-function Nav (props) {
+function Nav () {
     return (
         <nav>
             <h4>Diner Time</h4>
             <ul>
-                <li>Home</li>
-                <li>Recepten</li>
-                <li>Blog</li>
-                <li>Sign up</li>
-                <li>Log in</li>
+                <li><NavLink to="/" exact activeClassName="active-link">Home</NavLink></li>
+                <li><NavLink to="/recepten" exact activeClassName="active-link">Recepten</NavLink></li>
+                <li>FAQ</li>
             </ul>
             <div className="nav-bottom">
                 <div className="dark-mode">
-                    <p><image src="" alt="dark-mode"> </image> Dark mode </p>
+                    <p><img src={darkMode} alt={"dark-mode"} />Dark mode</p>
                 </div>
 
-                <button className="btn-sign-up">
+                <Link to={"/"} exact activeClassName="active-link">
+                    <button className="btn-sign-up">
                     Sign up
-                </button>
-                <button className="btn-log-in">
+                    </button></Link>
+                <Link to={"/recepten"} exact activeClassName="active-link">
+                <button
+                    className="btn-log-in"
+                >
                     Log in
                 </button>
+                </Link>
             </div>
         </nav>
     )

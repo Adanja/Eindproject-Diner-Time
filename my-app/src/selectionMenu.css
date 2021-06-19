@@ -1,0 +1,10 @@
+.select-menu {
+    grid-area: sort;
+    margin-left: 20%;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: white;
+
+    border-color: #9EA80D;
+    font-weight: bold;
+}
