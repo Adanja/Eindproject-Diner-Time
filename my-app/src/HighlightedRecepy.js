@@ -7,13 +7,13 @@ import fullStarRating from './img/Icon ionic-ios-star.svg';
 import halfStarRating from './img/Icon ionic-ios-star-half.svg';
 import emptyRating from './img/Icon ionic-ios-star-outline.svg';
 
-function HighlightedRecepy ( {h1} ) {
+function HighlightedRecepy ( {h1, id, tag1, tag2, tag3, img} ) {
     return (
         <>
             <div className="highlighted-recepy">
-                <div className={"hl-container"}>
+                <div className={id}>
                     <h1>{h1}</h1>
-                    <img className="highlighted_recepy_img" src={voorgerechtCoquielle} alt="coquelle"></img>
+                    <img className="highlighted_recepy_img" src={img} alt="gerecht_foto"></img>
                         <div className="social-media-handles">
                             <img src={pinterest} alt="pinterest"></img>
                             <img src={favouriteHeart} alt="favourite"></img>
@@ -29,9 +29,9 @@ function HighlightedRecepy ( {h1} ) {
                         </div>
 
                         <div className="recepy-tags">
-                            <tag>Voorgerecht</tag>
-                            <tag>Bladerdeeg</tag>
-                            <tag>Makkelijk</tag>
+                            <tag>{tag1}</tag>
+                            <tag>{tag2}</tag>
+                            <tag>{tag3}</tag>
                         </div>
                         <button className="btn_green">Recept maken</button>
                 </div>

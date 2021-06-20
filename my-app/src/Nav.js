@@ -17,10 +17,11 @@ function Nav () {
                     <p><img src={darkMode} alt={"dark-mode"} />Dark mode</p>
                 </div>
 
-                <Link to={"/"} exact activeClassName="active-link">
+                <Link to={"/signup"} exact activeClassName="active-link">
                     <button className="btn-sign-up">
                     Sign up
-                    </button></Link>
+                    </button>
+                </Link>
                 <Link to={"/recepten"} exact activeClassName="active-link">
                 <button
                     className="btn-log-in"

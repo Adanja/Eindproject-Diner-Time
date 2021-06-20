@@ -1,12 +1,12 @@
 import React from 'react';
-import Nav from '../Nav';
 
-function signUp() {
+function SignUpPagina() {
     return (
         <>
-        <h1>Welkom op de recepten pagina!</h1>
+        <h1>Welkom op Sign up pagina!</h1>
+            <p>Test</p>
         </>
     )
 }
 
-export default signUp();
+export default SignUpPagina();

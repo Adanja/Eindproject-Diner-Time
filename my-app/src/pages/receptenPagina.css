@@ -1,0 +1,9 @@
+/* Recepten pagina css (dit moet later in zijn eigen bestand */
+.bereidingswijze {
+    background-color: green;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
