@@ -1,9 +1,65 @@
 /* Recepten pagina css (dit moet later in zijn eigen bestand */
-.bereidingswijze {
-    background-color: green;
+.grid-recepy-page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "menu sort search search"
+    "menu chosen-recepy ingredients ."
+    "menu preparation preparation preparation"
+    "menu reviews reviews reviews"
+    "menu search-categories search-categories search-categories"
+    "menu highlighted-user highlighted-user highlighted-user"
+    "menu footer footer footer";
 }
 
-img {
-    width: 200px;
+.chosen-recepy {
+    text-align: center;
+    grid-area: chosen-recepy;
+}
+
+.ingrediënten {
+    grid-area: ingredients;
+}
+
+.bereidingswijze {
+    grid-area: preparation;
+    background-color: #9EA80D;
+    color: white;
+}
+
+.reviews {
+    grid-area: reviews;
+    text-align: center;
+}
+.reviews h1 {
+
+}
+
+.review-sort-option {
+    /*float: right;*/
+}
+
+.review-rating {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.review-rating-block {
+    margin: 10px;
+}
+
+.bereidingswijze h1 {
+    color: white;
+    text-align: center;
+}
+
+.img-chosen-recepy {
+    margin: 10px;
+    width: 500px;
     height: auto;
 }

@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "menu sort search search"
+    "menu highlighted-recepy highlighted-recepy2 ."
+    "menu search-courses search-courses search-courses"
+    "menu search-categories search-categories search-categories"
+    "menu highlighted-user highlighted-user highlighted-user"
+    "menu footer footer footer";
+}
+
+.search-categories {
+    grid-area: search-categories;
+    text-align: center;
+}
+.sc-buttons-outline {
+    display: block;
+    margin: 2%; /* Niet ideaal */
+}

@@ -1,11 +1,12 @@
 import React from 'react';
+import {ScrollToTop} from "./components/scrollToTop";
 
 function Footer () {
     return (
         <>
             <footer>
-                <p>Hallo ik ben de footer</p>
-                <button onClick="topFunction()" id="scroll-btn" title="Go to top">Top</button>
+                <p>footer</p>
+                <ScrollToTop  />
             </footer>
         </>
     )

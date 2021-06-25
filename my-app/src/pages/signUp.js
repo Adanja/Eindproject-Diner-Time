@@ -1,12 +1,11 @@
 import React from 'react';
 
-function SignUpPagina() {
+function SignUpPagina(props) {
     return (
-        <>
-        <h1>Welkom op Sign up pagina!</h1>
-            <p>Test</p>
-        </>
-    )
+        <div className={"grid-signUp"}>
+
+        </div>
+    );
 }
 
-export default SignUpPagina();
+export default SignUpPagina;

@@ -22,7 +22,7 @@ function Nav () {
                     Sign up
                     </button>
                 </Link>
-                <Link to={"/recepten"} exact activeClassName="active-link">
+                <Link to={"/login"} exact activeClassName="active-link">
                 <button
                     className="btn-log-in"
                 >

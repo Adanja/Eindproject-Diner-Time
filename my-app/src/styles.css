@@ -22,7 +22,6 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
 }
 
-
 .btn_green {
     background-color: #9EA80D;
     color: white;
@@ -39,7 +38,7 @@ h1 {
     font-family: "KG Blank Space Sketch";
     font-size: 42px;
     color: #570D10;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 input {
@@ -129,6 +128,7 @@ tag {
     border: #9EA80D 1px solid;
     border-radius: 14px;
     padding: 5px 30px 5px 30px;
+    margin: 5px;
     background-color: white;
 }
 
@@ -138,12 +138,16 @@ tag {
     text-align: center;
 }
 
-
 #highlighted-user {
     display: grid;
     grid-area: highlighted-user;
     color: #9EA80D;
     background-color: #F6FFF2;
+
+    /*grid-template-columns: auto;*/
+    /*grid-template-rows: auto;*/
+    /*grid-template-areas: ". user-text profile";*/
+    /*". buttons .";*/
 }
 
 #highlighted-user h3 {
@@ -153,19 +157,20 @@ tag {
 
 #hl-user-text {
     font-style: italic;
-    margin-left: 20%;
-    float: left;
+    justify-self: center;
+    width: 50%;
 }
 #hl-user-profile {
+    text-align: center;
+    justify-self: right;
+    margin-top: -16%;
+    margin-right: 5%;
 }
 
 #hl-user-buttons {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
+    margin: 10px;
+    justify-self: center;
 }
-
 
 footer {
     display: grid;
