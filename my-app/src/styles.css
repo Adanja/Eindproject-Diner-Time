@@ -34,6 +34,18 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
 }
 
+.category-btn {
+    color: #9EA80D;
+    background-color: white;
+    text-transform: uppercase;
+    margin: 10px;
+
+    border-radius: 14px;
+    padding: 10px 30px 10px 30px;
+    border-color: transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
+}
+
 h1 {
     font-family: "KG Blank Space Sketch";
     font-size: 42px;
@@ -94,7 +106,7 @@ input {
 .recepy-rating {
     position: absolute;
     bottom: 0;
-    right: 20px;
+    right: 65px;
     top: 75%;
 }
 

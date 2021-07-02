@@ -1,0 +1,99 @@
+.modal {
+    background-color: #ffffff;
+    top: 50%;
+    left: 30%;
+    position: fixed;
+    z-index: 5;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.popup-user-btn {
+    color: black;
+    background: transparent;
+    border: none;
+    display: block;
+    float: right;
+
+    position: relative;
+    transition: 0.3s;
+    padding: 10px;
+
+}
+
+.popup-user-btn:before {
+    content: '';
+    border-bottom: 3px solid #9EA80D;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+}
+
+.popup-user-btn:hover:before {
+    width: 100%;
+    padding: 0;
+}
+
+
+.popup-user-btn:active {
+    background: #9EA80D;
+    color: white;
+    transition: none;
+}
+
+/*Form lay-out*/
+.label-container {
+    display: inline-grid;
+    /*grid-template-columns: auto auto; !* Hoezo max content? *!*/
+    grid-gap: 5px;
+}
+.label-container label {text-align: right}
+
+
+form input {
+    margin-left: 20px;
+}
+
+.form-button {
+    display: block;
+    margin: 5% auto;
+    background-color: #9EA80D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    width: 400px;
+    padding-top: 15px;
+}
+
+.register-form-btn {
+    display: block;
+    margin: 5% auto;
+    background-color: #A80D13;
+    color: white;
+    text-transform: uppercase;
+    width: 400px;
+    padding-top: 15px;
+}
+
+.close-btn {
+    position: fixed;
+    font-size: 40px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    color: #9EA80D;
+    right: 18%;
+    top: 50%;
+}
+.close-btn:hover {
+    color: #282c34;
+    cursor: pointer;
+}

@@ -19,7 +19,7 @@ function HighlightedRecepy ( {h1, id, tag1, tag2, tag3, img} ) {
                             <img src={favouriteHeart} alt="favourite"></img>
                         </div>
                         <div className="recepy-rating">
-                            <div id="rated_stars"> Aantal sterren:
+                            <div id="rated_stars">
                                 <img src={fullStarRating} alt="rating"></img>
                                 <img src={fullStarRating} alt="rating"></img>
                                 <img src={fullStarRating} alt="rating"></img>

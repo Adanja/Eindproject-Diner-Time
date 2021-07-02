@@ -24,13 +24,9 @@ import SearchCategories from "../components/SearchCategories";
 function Homepage () {
     return (
         <div className={"grid"}>
-            <Nav
-            />
-            <SelectionMenu
-            />
-
-            <Searchbar
-            />
+            <Nav />
+            <SelectionMenu />
+            <Searchbar />
             <HighlightedRecepy
                 h1={"Coquelle"}
                 id={<div id={"hl_recepy_1"}></div>}

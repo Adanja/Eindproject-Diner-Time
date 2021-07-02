@@ -1,35 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import darkMode from './img/Icon feather-moon.svg';
 import "./Nav.css";
+import PopUp from "./components/PopUp";
 
 function Nav () {
+    const [popUp, togglePopUp] = useState(false);
+
+    const [showWindow, setShowWindow] = useState("Sign Up");
+
     return (
         <nav>
             <h4>Diner Time</h4>
             <ul>
                 <li><NavLink to="/" exact activeClassName="active-link">Home</NavLink></li>
                 <li><NavLink to="/recepten" exact activeClassName="active-link">Recepten</NavLink></li>
-                <li>FAQ</li>
+                <li><NavLink to={"/profile"} exact activeClassname={"active-link"}>Profiel</NavLink></li>
             </ul>
             <div className="nav-bottom">
                 <div className="dark-mode">
                     <p><img src={darkMode} alt={"dark-mode"} />Dark mode</p>
                 </div>
 
-                <Link to={"/signup"} exact activeClassName="active-link">
-                    <button className="btn-sign-up">
+                <button onClick={()=> {if (popUp === false) {togglePopUp(!popUp)} setShowWindow ("Sign up")}} className="btn-sign-up">
                     Sign up
-                    </button>
-                </Link>
-                <Link to={"/login"} exact activeClassName="active-link">
-                <button
-                    className="btn-log-in"
+                </button>
+
+                <button onClick={()=> {if (popUp === false) {togglePopUp(!popUp)} setShowWindow ("Log in")}}
+                        className="btn-log-in"
                 >
                     Log in
                 </button>
-                </Link>
+
             </div>
+            {popUp === true ? <PopUp showWindow={showWindow} closePopUp={signUp => togglePopUp(signUp)} /> : ""}
         </nav>
     )
 }
