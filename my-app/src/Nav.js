@@ -14,7 +14,7 @@ function Nav () {
             <h4>Diner Time</h4>
             <ul>
                 <li><NavLink to="/" exact activeClassName="active-link">Home</NavLink></li>
-                <li><NavLink to="/recepten" exact activeClassName="active-link">Recepten</NavLink></li>
+                <li><NavLink to="/receptenAlgemeen" exact activeClassName="active-link">Recepten</NavLink></li>
                 <li><NavLink to={"/profile"} exact activeClassname={"active-link"}>Profiel</NavLink></li>
             </ul>
             <div className="nav-bottom">

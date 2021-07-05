@@ -1,23 +1,10 @@
-import React, {useState, useRef} from 'react';
+import React from 'react';
 
-function Searchbar ( {term, searchKeyWord, }) {
-    console.log(term, searchKeyWord);
-    const inputEl = useRef("");
-    const getSearchTerm = () => {
-        // console.log(inputEl.current.value);
-        searchKeyWord(inputEl.current.value);
-    };
+function Searchbar (props) {
     return (
-
         <>
             <div id="searchbar">
-                <input ref={inputEl}
-                       type="text"
-                       className="select-recepy"
-                       placeholder="Vul hier je zoekterm in.."
-                       value={term}
-                       onChange={getSearchTerm}
-                    />
+                <input type="text" className="select-recepy " placeholder="Vul hier je zoekterm in.."></input>
 
                     <select name="recepy-courses" className="select-recepy">
                         <option value="" disabled selected>Selecteer type gang</option>

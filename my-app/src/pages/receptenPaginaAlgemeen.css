@@ -1,0 +1,108 @@
+.grid-recepy-page-algemeen {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "menu sort search search"
+    "menu ctaMaincourses ctaMaincourses ctaMaincourses"
+    "menu simpleHighlight simpleHighlight simpleHighlight"
+    "menu simpleHighlight simpleHighlight simpleHighlight"
+    "menu search-categories-img search-categories-img search-categories-img"
+    "menu highlighted-user highlighted-user highlighted-user"
+    "menu footer footer footer";
+}
+
+.cta-maincourses {
+    grid-area: ctaMaincourses;
+    text-align: center;
+}
+/* Styling voor MainCourses.js */
+cta.cta-maincourses, button {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 10px;
+    background-color: #9EA80D;
+    border-radius: 14px;
+    padding: 10px 40px 10px 40px;
+    color: #FFF;
+}
+
+.cta-maincourses, h3 {
+    color: #570D10;
+}
+
+.cta-voorgerecht {
+   background-image: url("../img/voorgerecht_groot.jpg");
+    background-position: center;
+    opacity: 0.6;
+}
+
+.cta-hoofdgerecht {
+    background-image: url("../img/hoofdgerecht_groot.jpg");
+    background-position: center;
+    opacity: 0.6;
+}
+
+.cta-nagerecht {
+    background-image: url("../img/ijs_nagerecht.jpg");
+    background-position: center;
+    opacity: 0.6;
+
+}
+
+.show-more-arrow {
+   margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+/* Einde styling MainCourses.js */
+
+
+.simple-highlighted-recepy {
+    grid-area: simpleHighlight;
+    background-color: red;
+}
+
+/* Styling voor SearchCategoriesImages */
+.search-catgegories-images {
+    grid-area: search-categories-img;
+}
+
+.category-btn {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px auto; /* Kan dit niet dynamischer met een wrap of auto? */
+}
+
+.category-btn:before {
+    content: "";
+    position: absolute;
+    opacity: 0.6;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #fff;
+    border-radius: 14px;
+    border: none;
+}
+
+.category-btn p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    color: #570D10;
+}
+
+.category-btn:hover:after {
+    opacity: 1.0;
+}
+
+#cg-ontbijt {background-image: url("../img/ontbijt.jpg");}
+#cg-voorgerecht {background-image: url("../img/voorgerecht.jpg");}
+#cg-tussengerecht{background-image: url("../img/tussengerecht.jpg");}
+#cg-hoofdgerecht{background-image: url("../img/hoofdgerecht.jpg");}
+#cg-nagerecht{background-image: url("../img/ijs_nagerecht.jpg");}

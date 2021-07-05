@@ -42,7 +42,7 @@
 
     border-radius: 14px;
     padding: 10px 30px 10px 30px;
-    border-color: transparent;
+    border: none;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
 }
 
@@ -85,6 +85,7 @@ input {
     padding: 10px;
     border-radius: 14px;
     border-color: #9EA80D;
+    border-style: solid;
 }
 
 

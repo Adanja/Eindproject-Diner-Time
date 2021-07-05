@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useRef} from 'react';
 import "./homepage.css";
 // import {BrowserRouter as Router} from "react-router-dom";
 // import { Link } from 'react-router-dom';
@@ -22,11 +22,28 @@ import HighlightedUser from "../components/HighlightedUser";
 import SearchCategories from "../components/SearchCategories";
 
 function Homepage () {
+    const [searchTerm, setSearchTerm] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
+    const searchHandler = (searchTerm) => {
+        // console.log(searchTerm);
+        setSearchTerm(searchTerm);
+        // Voeg een lijst met recepten toe, of een API?
+        // if (searchTerm !== "") {
+        //   const newRecepylist = recepies.filter((recepy) => {
+        //       return
+        //   }
+        // }
+    };
+
+
     return (
         <div className={"grid"}>
             <Nav />
             <SelectionMenu />
-            <Searchbar />
+            <Searchbar
+            term={searchTerm}
+            searchKeyWord={searchHandler}
+            />
             <HighlightedRecepy
                 h1={"Coquelle"}
                 id={<div id={"hl_recepy_1"}></div>}

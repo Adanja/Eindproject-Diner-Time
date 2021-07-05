@@ -1,5 +1,5 @@
 /* Recepten pagina css (dit moet later in zijn eigen bestand */
-.grid-recepy-page {
+.grid-recepy-page-algemeen {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
