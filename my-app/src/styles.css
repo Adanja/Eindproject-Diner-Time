@@ -34,6 +34,10 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
 }
 
+.btn_green:hover {
+    background-color: #666D04;
+}
+
 .category-btn {
     color: #9EA80D;
     background-color: white;
@@ -121,6 +125,7 @@ input {
 }
 
 .highlighted_recepy_img {
+    position: relative;
     margin: 10px;
     width: 500px;
     height: 400px;

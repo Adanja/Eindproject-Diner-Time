@@ -7,6 +7,9 @@ import SearchCategoriesImages from "../components/SearchCategoriesImages";
 import SimpleHighlightedRecepy from "../components/SimpleHighlightedRecepy";
 import HighlightedUser from "../components/HighlightedUser";
 import Footer from "../Footer";
+import vis from "../img/vis.jpg";
+import ijs from "../img/ijs_nagerecht.jpg";
+import vegan from "../img/vegan.jpg";
 
 function ReceptenPaginaAlgemeen(props) {
     return (
@@ -15,7 +18,43 @@ function ReceptenPaginaAlgemeen(props) {
             <Searchbar />
             <MainCourses />
             <SearchCategoriesImages />
-            <SimpleHighlightedRecepy />
+            <h1 id={"hl-recepyh1"}>Uitgelicht</h1>
+            <div className={"simple-highlighted-recepy-container"}>
+                <SimpleHighlightedRecepy
+                    id={"visRecepy"}
+                    img={vis}
+                    title={"Garnalen pasta"}
+                />
+
+                <SimpleHighlightedRecepy
+                    id={"ijsRecepy"}
+                    img={ijs}
+                    title={"Warm rood fruit"}
+                />
+
+                <SimpleHighlightedRecepy
+                    id={"veganRecepy"}
+                    img={vegan}
+                    title={"Vegan maaltijd"}
+                />
+                <SimpleHighlightedRecepy
+                    id={"visRecepy"}
+                    img={vis}
+                    title={"Garnalen pasta"}
+                />
+
+                <SimpleHighlightedRecepy
+                    id={"ijsRecepy"}
+                    img={ijs}
+                    title={"Warm rood fruit"}
+                />
+
+                <SimpleHighlightedRecepy
+                    id={"veganRecepy"}
+                    img={vegan}
+                    title={"Vegan maaltijd"}
+                />
+            </div>
             <HighlightedUser />
             <Footer />
         </div>

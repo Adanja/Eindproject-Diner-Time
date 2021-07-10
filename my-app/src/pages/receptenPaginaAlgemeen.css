@@ -5,68 +5,88 @@
     grid-template-areas:
     "menu sort search search"
     "menu ctaMaincourses ctaMaincourses ctaMaincourses"
+    "menu searchCategoriesImg searchCategoriesImg searchCategoriesImg"
     "menu simpleHighlight simpleHighlight simpleHighlight"
     "menu simpleHighlight simpleHighlight simpleHighlight"
-    "menu search-categories-img search-categories-img search-categories-img"
     "menu highlighted-user highlighted-user highlighted-user"
     "menu footer footer footer";
 }
 
 .cta-maincourses {
+    position: relative;
     grid-area: ctaMaincourses;
     text-align: center;
 }
 /* Styling voor MainCourses.js */
+.cta-voorgerecht:before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    opacity: 0.6;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.cta-maincourses, h3 {
+    position: relative;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
 cta.cta-maincourses, button {
+    position: relative;
     font-family: "Segoe UI";
     font-size: 12px;
     text-transform: uppercase;
     margin: 10px;
     background-color: #9EA80D;
     border-radius: 14px;
+    border-style: none;
     padding: 10px 40px 10px 40px;
     color: #FFF;
 }
 
 .cta-maincourses, h3 {
+    padding-top: 20px;
     color: #570D10;
 }
 
 .cta-voorgerecht {
    background-image: url("../img/voorgerecht_groot.jpg");
     background-position: center;
-    opacity: 0.6;
+    /*opacity: 0.6;*/
+}
+
+.cta-voorgerecht, button:hover {
+    background-color: #666D04;
 }
 
 .cta-hoofdgerecht {
     background-image: url("../img/hoofdgerecht_groot.jpg");
     background-position: center;
-    opacity: 0.6;
+    /*opacity: 0.6;*/
 }
 
 .cta-nagerecht {
     background-image: url("../img/ijs_nagerecht.jpg");
     background-position: center;
-    opacity: 0.6;
+    /*opacity: 0.6;*/
 
 }
 
 .show-more-arrow {
-   margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 2px;
+    position: relative;
+    left: 10px;
+    bottom: 2px;
 }
 /* Einde styling MainCourses.js */
 
 
-.simple-highlighted-recepy {
-    grid-area: simpleHighlight;
-    background-color: red;
-}
-
 /* Styling voor SearchCategoriesImages */
 .search-catgegories-images {
-    grid-area: search-categories-img;
+    grid-area: searchCategoriesImg;
 }
 
 .category-btn {
@@ -97,8 +117,14 @@ cta.cta-maincourses, button {
     color: #570D10;
 }
 
-.category-btn:hover:after {
-    opacity: 1.0;
+.category-btn p:hover {
+    color: white;
+}
+
+.category-btn:hover:before {
+    opacity: 0.8;
+    background-color: #666D04;
+    color: white;
 }
 
 #cg-ontbijt {background-image: url("../img/ontbijt.jpg");}
@@ -106,3 +132,75 @@ cta.cta-maincourses, button {
 #cg-tussengerecht{background-image: url("../img/tussengerecht.jpg");}
 #cg-hoofdgerecht{background-image: url("../img/hoofdgerecht.jpg");}
 #cg-nagerecht{background-image: url("../img/ijs_nagerecht.jpg");}
+
+#cg-kip{background-image: url("../img/kip_gerecht.jpg")}
+#cg-rund{background-image: url("../img/vlees.jpg")}
+#cg-vis{background-image: url("../img/vis.jpg")}
+#cg-wild{background-image: url("../img/wild_hert_braambessensaus.jpg")}
+
+#cg-vega{background-image: url("../img/vega.jpg")}
+#cg-vegan{background-image: url("../img/vegan.jpg")}
+#cg-gluten{background-image: url("../img/glutenvrij.jpeg")}
+#cg-lactose{background-image: url("../img/glutenvrij.jpeg")}
+/* Einde styling searchCategoriesImages */
+
+/* Begin Styling SimpleHighlightedRecepy.js */
+.simple-highlighted-recepy-container {
+    grid-area: simpleHighlight;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "vis ijs vegan"
+                         "vis ijs vegan";
+    background-color: red;
+}
+
+#hl-recepyh1 {
+}
+
+.simple-highlighted-recepy {
+    /*grid-area: simpleHighlight;*/
+    background-color: #F6FFF2;
+}
+.visRecepy {
+    grid-area: vis;
+}
+
+.ijsRecepy {
+    grid-area: ijs;
+}
+
+.veganRecepy {
+    grid-area: vegan;
+}
+
+.hl-recepy-infobox {
+    position: absolute;
+    bottom: 110px; /* Dit is niet responsive!! */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.hl-recepy-infobox:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0px;
+    bottom: 19px; /* Niet responsive */
+    left: 0px;
+    opacity: 0.6;
+    width: 510px; /* Niet responsive */
+    background-color: white;
+}
+
+.simple-recepy-rating, h3, #rated_stars {
+    position: relative;
+}
+
+.hl-recepy-btn {
+    position: initial;
+    /*margin-top: -80px;*/
+}

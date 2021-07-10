@@ -12,17 +12,17 @@ function SearchCategoriesImages(props) {
                 <button className={"category-btn"} id={"cg-nagerecht"}><p>Nagerecht</p></button>
             </div>
             <div className={"sc-buttons-outline"}>
-                <button className={"category-btn"}>Kip</button>
-                <button className={"category-btn"}>Rund</button>
-                <button className={"category-btn"}>Vis</button>
-                <button className={"category-btn"}>Wild</button>
+                <button className={"category-btn"} id={"cg-kip"}><p>Kip</p></button>
+                <button className={"category-btn"} id={"cg-rund"}><p>Rund</p></button>
+                <button className={"category-btn"} id={"cg-vis"}><p>Vis</p></button>
+                <button className={"category-btn"} id={"cg-wild"}><p>Wild</p></button>
             </div>
 
             <div className={"sc-buttons-outline"}>
-                <button className={"category-btn"}>Vegetarisch</button>
-                <button className={"category-btn"}>Vegan</button>
-                <button className={"category-btn"}>Gluten-vrij</button>
-                <button className={"category-btn"}>Lactose-vrij</button>
+                <button className={"category-btn"} id={"cg-vega"}><p>Vegetarisch</p></button>
+                <button className={"category-btn"} id={"cg-vegan"}><p>Vegan</p></button>
+                <button className={"category-btn"} id={"cg-gluten"}><p>Gluten-vrij</p></button>
+                <button className={"category-btn"} id={"cg-lactose"}><p>Lactose-vrij</p></button>
             </div>
         </div>
     );
