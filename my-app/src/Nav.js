@@ -6,7 +6,6 @@ import PopUp from "./components/PopUp";
 
 function Nav () {
     const [popUp, togglePopUp] = useState(false);
-
     const [showWindow, setShowWindow] = useState("Sign Up");
 
     return (
@@ -16,6 +15,7 @@ function Nav () {
                 <li><NavLink to="/" exact activeClassName="active-link">Home</NavLink></li>
                 <li><NavLink to="/receptenAlgemeen" exact activeClassName="active-link">Recepten</NavLink></li>
                 <li><NavLink to={"/profile"} exact activeClassname={"active-link"}>Profiel</NavLink></li>
+                <li><NavLink to={"/upload"} exact activeClassname={"active-link"}>Upload recept</NavLink></li>
             </ul>
             <div className="nav-bottom">
                 <div className="dark-mode">

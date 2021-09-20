@@ -49,6 +49,10 @@
     transition: none;
 }
 
+.popup-user-btn:hover {
+    background-color: transparent;
+}
+
 /*Form lay-out*/
 .label-container {
     display: inline-grid;
@@ -96,4 +100,5 @@ form input {
 .close-btn:hover {
     color: #282c34;
     cursor: pointer;
+    background-color: transparent;
 }

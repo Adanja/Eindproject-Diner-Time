@@ -1,0 +1,20 @@
+.left-form {
+    float: left;
+}
+
+.right-form {
+    float: right;
+}
+
+.file-upload {
+    border: #666D04 2px;
+}
+
+.form-beschrijving {
+    border: solid #666D04 2px;
+}
+
+.left-form, .right-form h5 {
+    font-size: 20px;
+    color: #570D10;
+}

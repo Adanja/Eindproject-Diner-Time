@@ -48,6 +48,7 @@ nav li {
     display: block;
     width: auto;
     margin: auto;
+    color: #A80D13;
 
     border-radius: 4px;
     border: solid #A80D13;
@@ -59,6 +60,11 @@ nav li {
     text-transform: uppercase;
 }
 
+.btn-sign-up:hover {
+    background-color: #A80D13;
+    color: #F6FFF2;
+}
+
 .btn-log-in {
     display: block;
     width: 103px;
@@ -66,11 +72,18 @@ nav li {
     background-color: #A80D13;
     padding: 20px;
     border-radius: 4px;
-    border-color: transparent;
+    border-color: #A80D13;
     color: white;
 
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.btn-log-in:hover {
+    background-color: #FFF;
+    color: #A80D13;
+    border-radius: 4px;
+    border: solid #A80D13;
 }
 
 /* Responsive CSS */
