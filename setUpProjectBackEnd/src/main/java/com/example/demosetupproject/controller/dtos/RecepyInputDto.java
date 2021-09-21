@@ -11,12 +11,12 @@ public class RecepyInputDto {
     String description;
 
     public Recipe toRecepy(){
-        var recepy = new Recipe();
-        recepy.setId(id);
-        recepy.setName(name);
-        recepy.setTime(time);
-        recepy.setDifficultyRating(difficultyRating);
-        recepy.setDescription(description);
-        return recepy;
+        var recipe = new Recipe();
+        recipe.setId(id);
+        recipe.setName(name);
+        recipe.setTime(time);
+        recipe.setDifficultyRating(difficultyRating);
+        recipe.setDescription(description);
+        return recipe;
     }
 }
