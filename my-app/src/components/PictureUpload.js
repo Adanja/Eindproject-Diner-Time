@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react';
 import axios from 'axios';
 import { AuthContext } from '../context/AuthContextProvider';
 
-function RecepyUpload(){
+function PictureUpload(){
     const [selectedFile, setSelectedFile] = useState();
     const [registerSuccess, toggleRegisterSuccess] = useState(false);
     const {login,logout, user,status} =  useContext(AuthContext);
@@ -41,4 +41,4 @@ function RecepyUpload(){
         </form>
     )
 }
-export default RecepyUpload;
+export default PictureUpload;
