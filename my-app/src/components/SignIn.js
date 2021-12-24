@@ -1,7 +1,7 @@
 // slightly modified from branch uitwerling-9, repository https://github.com/hogeschoolnovi/frontend-react-user-registration.git
 import React, {useContext, useState} from 'react';
 import axios from 'axios';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../context/AuthContextProvider';
 import "./SignIn.css";
@@ -31,7 +31,7 @@ function SignIn() {
             toggleRegisterSuccess(true);
             login(result.data.jwt);
             setTimeout(() => {
-                history.push('/signin');
+                history.push('/');
             }, 2000);
         } catch(e) {
             console.error(e);

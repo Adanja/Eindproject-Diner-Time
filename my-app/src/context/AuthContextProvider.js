@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
-import { useHistory } from 'react-router-dom';
+import {useHistory} from "react-router-dom";
 export const AuthContext = createContext({});
 
 function AuthContextProvider({ children }) {
@@ -60,7 +60,7 @@ function AuthContextProvider({ children }) {
                 },
                 status: 'done',
             });
-            //history.push('/profile'); // this is how Nova did it
+            // history.push('/profile'); // this is how Nova did it
             history.push('/');
             console.log("line 115 of AuthContext.js: modify line 1bove to redirect to another page than profile after login in")
         } catch(e) {

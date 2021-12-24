@@ -2,13 +2,13 @@ import React, {useState, useRef} from 'react';
 import "./homepage.css";
 // import {BrowserRouter as Router} from "react-router-dom";
 // import { Link } from 'react-router-dom';
-
+import RecipeData from "../Data.json";
 
 // Components
 import Footer from "../Footer";
 import Nav from "../Nav";
-import SelectionMenu from "../SelectionMenu";
-import Searchbar from "../Searchbar";
+// import Searchbar from "../Searchbar";
+import Searchbar from "../components/Searchbar";
 import HighlightedRecepy from "../HighlightedRecepy";
 
 
@@ -39,10 +39,10 @@ function Homepage () {
     return (
         <div className={"grid"}>
             <Nav />
-            <SelectionMenu />
             <Searchbar
             term={searchTerm}
             searchKeyWord={searchHandler}
+            data={RecipeData}
             />
             <HighlightedRecepy
                 h1={"Coquelle"}

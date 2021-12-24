@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./receptenPaginaAlgemeen.css";
 import Nav from "../Nav";
 import Searchbar from "../Searchbar";
@@ -12,6 +12,20 @@ import ijs from "../img/ijs_nagerecht.jpg";
 import vegan from "../img/vegan.jpg";
 
 function ReceptenPaginaAlgemeen(props) {
+
+    const RecipeList = (props) => {
+        console.log(props);
+        const inputEl = useRef("");
+        const deleteRecipeHandler = (id) => {
+            props.getRecipeId(id);
+        }
+    };
+
+
+    const getSearchTerm = () => {
+
+    }
+
     return (
         <div className={"grid-recepy-page-algemeen"}>
             <Nav />
